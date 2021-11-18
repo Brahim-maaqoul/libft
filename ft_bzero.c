@@ -6,7 +6,7 @@
 /*   By: bmaaqoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:35:10 by bmaaqoul          #+#    #+#             */
-/*   Updated: 2021/11/02 15:19:26 by bmaaqoul         ###   ########.fr       */
+/*   Updated: 2021/11/18 11:25:23 by bmaaqoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,13 @@
 void	ft_bzero(void *s, size_t n)
 {
 	char	*pt;
+	int		i;
 
+	i = 0;
 	pt = (char *) s;
-	while (n--)
+	while (i < n)
 	{
-		*pt++ = '\0';
+		pt[i] = '\0';
+		i++;
 	}
 }

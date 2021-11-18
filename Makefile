@@ -6,7 +6,7 @@
 #    By: bmaaqoul <bmaaqoul@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/15 15:46:31 by bmaaqoul          #+#    #+#              #
-#    Updated: 2021/11/15 17:53:47 by bmaaqoul         ###   ########.fr        #
+#    Updated: 2021/11/18 11:24:13 by bmaaqoul         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ $(OBJS): $(SRCS)
 clean:
 	rm -f $(OBJS)
 
-fclean: 
+fclean: clean
 	rm -f $(NAME)
 
 re:	fclean all
