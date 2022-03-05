@@ -6,7 +6,7 @@
 #    By: bmaaqoul <bmaaqoul@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/15 15:46:31 by bmaaqoul          #+#    #+#              #
-#    Updated: 2021/11/18 19:35:17 by bmaaqoul         ###   ########.fr        #
+#    Updated: 2022/03/05 22:27:33 by bmaaqoul         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-$(OBJS): $(SRCS)
+$(OBJS): $(SRCS) libft.h
 	$(CC) $(CFLAGS) -c $(SRCS)
 
 clean:
